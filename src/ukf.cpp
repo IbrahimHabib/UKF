@@ -28,10 +28,10 @@ UKF::UKF() {
   P_ = MatrixXd::Identity(5, 5);
 
   // Process noise standard deviation longitudinal acceleration in m/s^2
-  std_a_ = 3.0;
+  std_a_ = 3.0; //the needed value to pass the RMS
 
   // Process noise standard deviation yaw acceleration in rad/s^2
-  std_yawdd_ = 0.5;
+  std_yawdd_ = 0.7; //the needed value to pass the RMSE
   
   /**
    * DO NOT MODIFY measurement noise values below.
